@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+
+
+    <title>My Portfolio</title>
+</head>
+<body>
+    <section class="all">
+        <header class="header">
+            <nav class="navbar">
+                <img class="nav-logo" src="./img/logo.png" alt="">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#work" class="nav-link">My Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#certificates" class="nav-link">Certificates</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+    
+    
+    
+            <section id="home">
+                <div class="main-cont">
+                    <div style="text-align: center; display: flex; justify-content: center;">
+                        <img class="first-pic" src="./img/My-Pic2.jpg" alt="">
+                    </div>
+    
+                    <div class="ball">
+                        <h1 style="font-size: 4.5rem; font-weight: 400;">Hi I'm Nikko</h1>
+                        <h2 style="font-size: 3rem; font-weight: 400; color: red; font-weight: 700;">Bachelor of Science and Technology Student.</h2>
+    
+                        <h5 style="font-size: 2.2rem; font-weight: 400;">A third year BSIT currently studying at Guagua National Colleges <br>
+                            to become a Web Developer & UI/UX Designer.
+                        </h5>
+                        <div>
+                            <button class="btn">CONTACT</button>
+                            <button class="btn">DOWNLOAD</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+    
+            <!-- about me -->
+            <section id="about">
+                <h1 style="text-align: center; font-size: 4rem; margin-bottom: 8rem;">
+                    ABOUT ME
+                </h1>
+                <div class="main-cont2">
+                    <div style="text-align: center;">
+                        <img class="second-pic" src="./img/mypic3.jpg" alt="">
+                    </div>
+    
+                    <div class="text-cont">
+                        <p style="font-size: 1.9rem;">
+                            I possess a dynamic skill set that revolves around UI/UX design and programming, 
+                            showcasing my proficiency in both the aesthetic and functional aspects of digital 
+                            creation. With a keen eye for user experience, I excel in crafting intuitive and 
+                            visually appealing interfaces that prioritize user engagement and satisfaction. 
+                            My UI/UX design skills are complemented by a robust programming background, 
+                            enabling me to bring my designs to life through efficient and elegant code. 
+                            Whether it's translating user needs into compelling design concepts or seamlessly 
+                            integrating functionality into the final product, I am adept at navigating the 
+                            intersection of design and technology. My commitment to staying abreast of 
+                            industry trends and continuously enhancing my skills ensures that I contribute 
+                            effectively to projects that demand a harmonious blend of creativity and technical expertise.
+                        </p>
+                    </div>
+                </div>
+            </section>
+    
+    
+            <!-- Work -->
+            <section id="work">
+                <h1 style="text-align: center; font-size: 4rem; margin-bottom: 8rem;">My Works</h1>
+                <div class="main-proj-cont">
+                    <div class="proj-cont">
+                        <img class="images" src="./img/proj1.png" alt="">
+                        <img class="images" src="./img/proj2.png" alt="">
+                    </div>
+                </div>
+            </section>
+    
+    
+            <!-- Cert -->
+            <section id="certificates">
+                <h1 style="text-align: center; font-size: 4rem; margin-bottom: 8rem;">
+                    My Certificates
+                </h1>
+                <div>
+                    <div class="certs-cont">
+                        <img class="certs" src="./img/cert1.png" alt="">
+                        <img class="certs"src="./img/cert2.png" alt="">
+                        <img class="certs" src="./img/cert3.png" alt="">
+                    </div>
+                </div>
+            </section>
+    
+    
+            <!-- footer -->
+            <section id="footer">
+                <footer>
+                    <div class="icons-cont">
+                        <img class="icons" src="./img/fbicon.png" alt="">
+                        <img class="icons" src="./img/instaicon.png" alt="">
+                        <img class="icons" src="./img/twittericon.png" alt="">
+                    </div>
+                    <br><br>
+                    <div>
+                        <p style="font-size: 1.7rem; color: white; text-align: center;">
+                            Copyright © 2023 Nikko Magtuloy. All rights reserved
+                        </p>
+                    </div>
+                </footer>
+            </section>
+    </section>
+</header>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    }
+    const navLink = document.querySelectorAll(".nav-link");
+
+    navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }
+</script>
+
+</html>
